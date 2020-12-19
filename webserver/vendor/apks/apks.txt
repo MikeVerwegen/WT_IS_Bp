@@ -1,0 +1,17 @@
+autoconf
+g++
+git
+krb5-libs
+make
+nodejs-current
+npm
+openjdk11-jre-headless
+php7
+php7-dev
+php7-openssl
+php7-pdo
+php7-pear
+php7-pecl-xdebug
+shellcheck
+unixodbc
+unixodbc-dev
