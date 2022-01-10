@@ -1,5 +1,5 @@
 <?php
-  $titel = "Privacy";
+  $titel = "Privacyverklaring";
   require_once 'components/head.php';
   require_once 'components/header.php';
   genereerHead($titel);
@@ -13,7 +13,7 @@
       </header>
       <main>
         <h1>
-          PRIVACYVERKLARING
+          <?=$titel?>
         </h1>
         <p>
           De voorwaarden die van toepassing zijn voor de Fletnix-service zijn afhankelijk van uw locatie.

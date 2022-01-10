@@ -1,5 +1,5 @@
 <?php
-  $titel = 'Bedrijfsgegevens';
+  $titel = "Over ons";
   require_once 'components/head.php';
   require_once 'components/header.php';
   genereerHead($titel);
@@ -12,7 +12,7 @@
         ?>
       </header>
       <main>
-        <h1>INFORMATIE OVER FLETNIX</h1>
+        <h1><?=$titel?></h1>
         <p>
           Fletnix is een streamingdienst die recent haar entree op de markt heeft gemaakt. Het doel van Fletnix is om de
           komende jaren uit te breiden, zodat het haar gebruikers een breed assortiment aan mediaproducten aan kan
