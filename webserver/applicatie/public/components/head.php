@@ -1,11 +1,8 @@
 <?php
-$config = ['taal' => 'nl'];
-
 function genereerHead($titel) {
-  global $config;
   $html = <<<HEAD
   <!DOCTYPE html>
-  <html lang="$config['taal']">
+  <html lang="nl">
   <head>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">

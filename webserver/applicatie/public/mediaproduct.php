@@ -5,7 +5,7 @@
   $hoofdrolspelers = ["Tom Holland", "Benedict Cumberbatch", "Alfred Molina", "Willem Dafoe", "Jamie Foxx", "J.K. Simmons"];
   require_once 'components/head.php';
   require_once 'components/header.php';
-  genereerHeader($titel);
+  genereerHead($titel);
 ?>
   <body>
     <div class="grid">
