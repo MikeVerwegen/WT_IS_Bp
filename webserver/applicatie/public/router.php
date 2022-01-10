@@ -1,42 +1,50 @@
 <?php
-
-// Verdeelt HTTP requests naar de juiste PHP-views.
-
-declare(strict_types=1);
-
-require_once 'config/bootstrap.php';
-
-/*
-`$_SERVER['REQUEST_URI']` is de volledige URL die binnenkomt op de webserver bij het request, vanaf het pad.
-Dus bij 'http://localhost/pad/naar/pagina?naam=Piet' is het `'/pad/naar/pagina?naam=Piet'`.
-Met `parse_url` zoals hieronder aangeroepen pak je alleen het pad-gedeelte.
-Dus dan wordt het `'/pad/naar/pagina'`.
-*/
-$urlPad = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-if ($urlPad === '' || $urlPad === '/') {
-  require_once 'src/views/index.php';
-} else {
-  /*
-  Er is geen pagina opgevraagd in het HTTP-request.
-  Ga ervan uit dat een bestand (zoals een stylesheet) is opgevraagd.
-  */
-  $isBestand = preg_match(
-  /*
-  Als het pad eindigt met `.css` of één van de andere door `|` gescheiden bestandsnaamextensies,
-  is een geldig bestandstype opgevraagd.
-  */
-      '/\.(?:css|png|jpg|jpeg|svg|woff|woff2|ttf|otf|html|mp4|webm|ogm|ogv|ogg|mp3)$/',
-      $urlPad
-  );
-  if ($isBestand) {
-    /*
-    Geef PHP het signaal dat geen pagina maar een bestand opgevraagd is.
-    PHP stuurt dan het bestand op naar de client.
-    */
-    return false;
-  } else {
-    // Het is een bekende pagina noch een geldig bestandstype.
-    http_response_code(404);
-    require_once 'src/views/404.php';
-  }
-}
+  $titel = "Home - Fletnix";
+  require_once 'components/head.php';
+  require_once 'components/header.php';
+  genereerHeader($titel);
+?>
+  <body>
+    <div class="grid">
+      <header>
+        <?=
+        maakHeader();
+        ?>
+      </header>
+      <main>
+        <div class="preview-grid">
+          <spiderman>
+            <a href="mediaproduct.php">
+              <img src="images/thumbnail-spiderman.jpg" alt="Spider-Man: No Way Home" />
+            </a>
+            <p>Spiderman: No Way Home</p>
+          </spiderman>
+          <bond>
+            <a href="mediaproduct.php">
+              <img src="images/thumbnail-jamesbond.jpg" alt="No Time To Die" />
+            </a>
+            <p>No Time To Die</p>
+          </bond>
+          <venom>
+            <a href="mediaproduct.php">
+              <img src="images/thumbnail-venom.jpg" alt="Venom: Let There Be Carnage" />
+            </a>
+            <p>Venom: Let There Be Carnage</p>
+          </venom>
+          <notice>
+            <a href="mediaproduct.php">
+              <img src="images/thumbnail-rednotice.jpg" alt="Red Notice" />
+            </a>
+            <p>Red Notice</p>
+          </notice>
+          <grand>
+            <a href="mediaproduct.php">
+              <img src="images/thumbnail-grandtour.jpg" alt="The Grand Tour" />
+            </a>
+            <p>The Grand Tour</p>
+          </grand>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
