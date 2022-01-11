@@ -15,31 +15,31 @@
         <div class="preview-grid">
           <spiderman>
             <a href="mediaproduct.php">
-              <img src="images/thumbnail-spiderman.jpg" alt="Spider-Man: No Way Home" />
+              <img src="images/thumbnail-spiderman.jpg" alt="Preview van Spider-Man: No Way Home"/>
             </a>
             <p>Spiderman: No Way Home</p>
           </spiderman>
           <bond>
             <a href="mediaproduct.php">
-              <img src="images/thumbnail-jamesbond.jpg" alt="No Time To Die" />
+              <img src="images/thumbnail-jamesbond.jpg" alt="Preview van No Time To Die"/>
             </a>
             <p>No Time To Die</p>
           </bond>
           <venom>
             <a href="mediaproduct.php">
-              <img src="images/thumbnail-venom.jpg" alt="Venom: Let There Be Carnage" />
+              <img src="images/thumbnail-venom.jpg" alt="Preview van Venom: Let There Be Carnage"/>
             </a>
             <p>Venom: Let There Be Carnage</p>
           </venom>
           <notice>
             <a href="mediaproduct.php">
-              <img src="images/thumbnail-rednotice.jpg" alt="Red Notice" />
+              <img src="images/thumbnail-rednotice.jpg" alt="Preview van Red Notice"/>
             </a>
             <p>Red Notice</p>
           </notice>
           <grand>
             <a href="mediaproduct.php">
-              <img src="images/thumbnail-grandtour.jpg" alt="The Grand Tour" />
+              <img src="images/thumbnail-grandtour.jpg" alt="Preview van The Grand Tour"/>
             </a>
             <p>The Grand Tour</p>
           </grand>

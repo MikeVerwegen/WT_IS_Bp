@@ -1,8 +1,11 @@
 <?php
   $titel = "Spider-Man: No Way Home";
-  $speelduur = "2 uur 30 minuten";
+  $speelduur = 150;
+  $omschrijving = "Voor de allereerste keer in de geschiedenis van de Spider-Man-films is onze vriendelijke superheld ontmaskerd en kan hij zijn normale leven niet langer gescheiden houden van zijn gevaarlijke leven als superheld.";
+  $jaarvanuitgave = 2021;
   $regisseur = "Jon Watts";
   $hoofdrolspelers = ["Tom Holland", "Benedict Cumberbatch", "Alfred Molina", "Willem Dafoe", "Jamie Foxx", "J.K. Simmons"];
+  $cover = "images/poster-spiderman.jpg";
   require_once 'components/head.php';
   require_once 'components/header.php';
   genereerHead($titel);
@@ -18,10 +21,10 @@
         <h1>
           <?=$titel?>
         </h1>
-        <img src="images/poster-spiderman.jpg" alt="Poster van Spider-Man: No Way Home">
+        <img src=<?=$cover?> alt="">
         <p>
-          2021 - <?=$speelduur?><br><br>
-          Voor de allereerste keer in de geschiedenis van de Spider-Man-films is onze vriendelijke superheld ontmaskerd en kan hij zijn normale leven niet langer gescheiden houden van zijn gevaarlijke leven als superheld.<br>
+          <?=.$jaarvanuitgave.' - '.$speelduur.' minuten'?><br><br>
+          <?=$omschrijving?><br>
           <video controls width="750">
             <source src="media/trailer-spiderman.mp4" type="video/mp4">
           </video>
@@ -34,28 +37,28 @@
             </thead>
             <tr>
               <td>
-                <img src="images/jonwatts.jpg" alt="Jon Watts">
+                <img src="images/jonwatts.jpg" alt="">
               </td>
               <td>
-                <img src="images/tomholland.jpg" alt="Tom Holland">
+                <img src="images/tomholland.jpg" alt="">
               </td>
               <td>
-                <img src="images/benedictcumberbatch.jpg" alt="Benedict Cumberbatch">
+                <img src="images/benedictcumberbatch.jpg" alt="">
               </td>
               <td>
-                <img src="images/alfredmolina.jpg" alt="Alfred Molina">
+                <img src="images/alfredmolina.jpg" alt="">
               </td>
               <td>
-                <img src="images/willemdafoe.jpg" alt="Willem Dafoe">
+                <img src="images/willemdafoe.jpg" alt="">
               </td>
               <td>
-                <img src="images/jamiefoxx.jpg" alt="Jamie Foxx">
+                <img src="images/jamiefoxx.jpg" alt="">
               </td>
               <td>
-                <img src="images/jksimmons.jpg" alt="J.K. Simmons">
+                <img src="images/jksimmons.jpg" alt="">
               </td>
-              </tr>
-              <tr>
+            </tr>
+            <tr>
               <td>
                 <?=$regisseur?>
               </td>

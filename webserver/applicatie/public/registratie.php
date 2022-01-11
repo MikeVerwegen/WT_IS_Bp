@@ -15,11 +15,11 @@
         <form action="login.php" method="post">
           <fieldset>
             <label for="vnaam">Voornaam: *</label>
-            <input id="vnaam" type="text" name="vnaam" required autofocus /><br />
+            <input id="vnaam" type="text" name="vnaam" required autofocus/><br/>
             <label for="tussen">Tussenvoegsel:</label>
-            <input id="tussen" type="text" name="tussen" /><br />
+            <input id="tussen" type="text" name="tussen"/><br/>
             <label for="anaam">Achternaam: *</label>
-            <input id="anaam" type="text" name="anaam" required /><br />
+            <input id="anaam" type="text" name="anaam" required/><br/>
             <label for="mail">E-mailadres: *</label>
             <input
               id="mail"
@@ -29,19 +29,17 @@
               required
             /><br />
             <label for="land">Nationaliteit: *</label>
-            <input id="land" type="text" name="land" required /><br />
+            <input id="land" type="text" name="land" required/><br/>
             <label for="datum">Geboortedatum: *</label>
-            <input id="datum" type="date" name="datum" required /><br />
+            <input id="datum" type="date" name="datum" required/><br/>
             <label for="mw">Abonnementkeuze: *</label>
             <!-- required -->
             <fieldset>
               <label for="opt1"><input id="opt1" type="radio" name="mw" value="8.99" />€8.99 (Standaard)</label>
               <label for="opt2"
-                ><input id="opt2" type="radio" name="mw" value="10.99" />€10.99 (Standaard + Full HD)</label
-              >
+                ><input id="opt2" type="radio" name="mw" value="10.99" />€10.99 (Standaard + Full HD)</label>
               <label for="opt3"
-                ><input id="opt3" type="radio" name="mw" value="12.99" />€12.99 (Standaard + 4K/UHD)</label
-              >
+                ><input id="opt3" type="radio" name="mw" value="12.99" />€12.99 (Standaard + 4K/UHD)</label>
             </fieldset>
             <label for="iban">IBAN-nummer: *</label>
             <input
@@ -55,12 +53,12 @@
               required
             /><br />
             <label for="ww">Wachtwoord: *</label>
-            <input id="ww" type="password" name="ww" required /><br />
+            <input id="ww" type="password" name="ww" required/><br />
             <label for="hww">Bevestiging wachtwoord: *</label>
-            <input id="hww" type="password" name="hww" required />
+            <input id="hww" type="password" name="hww" required/>
             <!-- moet gelijk zijn aan wachtwoord -->
           </fieldset>
-          <input type="submit" value="Registreren" />
+          <input type="submit" value="Registreren"/>
         </form>
       </main>
     </div>

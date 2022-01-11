@@ -1,8 +1,8 @@
 <?php
-  $titel = "Over ons";
+  $titel = "Privacyverklaring";
   require_once 'components/head.php';
   require_once 'components/header.php';
-  require_once 'components/informatie.php';
+  require_once 'components/privacy.php';
   genereerHead($titel);
 ?>
   <body>
@@ -13,7 +13,7 @@
         ?>
       </header>
       <main>
-        schrijfBedrijfsinformatie();
+        schrijfPrivacyverklaring();
       </main>
     </div>
   </body>

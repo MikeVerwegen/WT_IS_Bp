@@ -13,9 +13,9 @@
       </header>
       <main>
         <figure>
-          <img src="images/logo.png" alt="" />
+          <img src="images/logo.png" alt=""/>
         </figure>
-        <form action="index.html" method="post">
+        <form action="router.php" method="post">
           <fieldset>
             <label for="mail">E-mailadres:</label>
             <input
@@ -26,12 +26,12 @@
               required
             /><br />
             <label for="ww">Wachtwoord:</label>
-            <input id="ww" type="password" name="ww" required /><br />
+            <input id="ww" type="password" name="ww" required /><br/>
           </fieldset>
-          <input type="submit" value="Inloggen" />
+          <input type="submit" value="Inloggen"/>
         </form>
-        <form action="registratie.html" method="post">
-          <input type="submit" value="Registreren" />
+        <form action="registratie.php" method="post">
+          <input type="submit" value="Registreren"/>
         </form>
       </main>
     </div>
