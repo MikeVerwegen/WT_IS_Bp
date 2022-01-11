@@ -5,7 +5,7 @@
   $jaarvanuitgave = 2021;
   $regisseur = "Jon Watts";
   $hoofdrolspelers = ["Tom Holland", "Benedict Cumberbatch", "Alfred Molina", "Willem Dafoe", "Jamie Foxx", "J.K. Simmons"];
-  $cover = "media/trailer-spiderman.mp4";
+  $cover = "images/poster-spiderman.jpg";
   require_once 'components/head.php';
   require_once 'components/header.php';
   require_once 'components/cast.php';
@@ -22,12 +22,12 @@
         <h1>
           <?=$titel?>
         </h1>
-        <img src="images/poster-spiderman.jpg" alt="Poster van Spider-Man: No Way Home">
+        <img src="<?=$cover?>" alt="Poster van Spider-Man: No Way Home">
         <p>
           <?=$jaarvanuitgave.' - '.$speelduur.' minuten'?><br><br>
           <?=$omschrijving?><br>
           <video controls width="750">
-            <source src="<?=$cover?>" type="video/mp4">
+            <source src="media/trailer-spiderman.mp4" type="video/mp4">
           </video>
           <?=
             printCast($regisseur, $hoofdrolspelers);
