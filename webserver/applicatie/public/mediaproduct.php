@@ -8,6 +8,7 @@
   $cover = "media/trailer-spiderman.mp4";
   require_once 'components/head.php';
   require_once 'components/header.php';
+  require_once 'components/cast.php';
   genereerHead($titel);
 ?>
   <body>
@@ -28,37 +29,9 @@
           <video controls width="750">
             <source src="<?=$cover?>" type="video/mp4">
           </video>
-          <table>
-            <thead>
-              <tr>
-                <th colspan="1">Regisseur</th>
-                <th colspan="6">Acteurs</th>
-              </tr>
-            </thead>
-            <tr>
-              <td>
-                <?=$regisseur?>
-              </td>
-              <td>
-                <?=$hoofdrolspelers[0]?>
-              </td>
-              <td>
-                <?=$hoofdrolspelers[1]?>
-              </td>
-              <td>
-                <?=$hoofdrolspelers[2]?>
-              </td>
-              <td>
-                <?=$hoofdrolspelers[3]?>
-              </td>
-              <td>
-                <?=$hoofdrolspelers[4]?>
-              </td>
-              <td>
-                <?=$hoofdrolspelers[5]?>
-              </td>
-            </tr>
-          </table>
+          <?=
+            printCast($regisseur, $hoofdrolspelers);
+          ?>
         </p>
       </main>
     </div>
