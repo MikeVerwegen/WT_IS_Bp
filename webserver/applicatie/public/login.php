@@ -2,6 +2,7 @@
   $titel = 'Fletnix';
   require_once 'components/head.php';
   require_once 'components/header.php';
+  require_once 'components/formLogin.php';
   genereerHead($titel);
 ?>
   <body>
@@ -15,24 +16,9 @@
         <figure>
           <img src="images/logo.png" alt=""/>
         </figure>
-        <form action="router.php" method="post">
-          <fieldset>
-            <label for="mail">E-mailadres:</label>
-            <input
-              id="mail"
-              type="email"
-              name="mail"
-              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9._%+-]+\.[a-zA-Z]{2,4}$"
-              required
-            /><br />
-            <label for="ww">Wachtwoord:</label>
-            <input id="ww" type="password" name="ww" required /><br/>
-          </fieldset>
-          <input type="submit" value="Inloggen"/>
-        </form>
-        <form action="registratie.php" method="post">
-          <input type="submit" value="Registreren"/>
-        </form>
+        <?=
+        genereerInlogFormulier();
+        ?>
       </main>
     </div>
   </body>

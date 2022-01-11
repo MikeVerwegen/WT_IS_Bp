@@ -5,7 +5,7 @@
   $jaarvanuitgave = 2021;
   $regisseur = "Jon Watts";
   $hoofdrolspelers = ["Tom Holland", "Benedict Cumberbatch", "Alfred Molina", "Willem Dafoe", "Jamie Foxx", "J.K. Simmons"];
-  $cover = "images/poster-spiderman.jpg";
+  $cover = "media/trailer-spiderman.mp4";
   require_once 'components/head.php';
   require_once 'components/header.php';
   genereerHead($titel);
@@ -21,12 +21,12 @@
         <h1>
           <?=$titel?>
         </h1>
-        <img src=<?=$cover?> alt="">
+        <img src="images/poster-spiderman.jpg" alt="Poster van Spider-Man: No Way Home">
         <p>
-          <?=.$jaarvanuitgave.' - '.$speelduur.' minuten'?><br><br>
+          <?=$jaarvanuitgave.' - '.$speelduur.' minuten'?><br><br>
           <?=$omschrijving?><br>
           <video controls width="750">
-            <source src="media/trailer-spiderman.mp4" type="video/mp4">
+            <source src="<?=$cover?>" type="video/mp4">
           </video>
           <table>
             <thead>
@@ -35,29 +35,6 @@
                 <th colspan="6">Acteurs</th>
               </tr>
             </thead>
-            <tr>
-              <td>
-                <img src="images/jonwatts.jpg" alt="">
-              </td>
-              <td>
-                <img src="images/tomholland.jpg" alt="">
-              </td>
-              <td>
-                <img src="images/benedictcumberbatch.jpg" alt="">
-              </td>
-              <td>
-                <img src="images/alfredmolina.jpg" alt="">
-              </td>
-              <td>
-                <img src="images/willemdafoe.jpg" alt="">
-              </td>
-              <td>
-                <img src="images/jamiefoxx.jpg" alt="">
-              </td>
-              <td>
-                <img src="images/jksimmons.jpg" alt="">
-              </td>
-            </tr>
             <tr>
               <td>
                 <?=$regisseur?>

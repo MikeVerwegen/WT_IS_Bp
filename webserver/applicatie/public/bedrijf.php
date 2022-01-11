@@ -13,7 +13,9 @@
         ?>
       </header>
       <main>
+        <?=
         schrijfBedrijfsinformatie();
+        ?>
       </main>
     </div>
   </body>
