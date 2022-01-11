@@ -1,17 +1,13 @@
 <?php
-  $film = [
-    'titel' => "Spider-Man: No Way Home",
-    'speelduur' => 150,
-    'omschrijving' => "Voor de allereerste keer in de geschiedenis van de Spider-Man-films is onze vriendelijke superheld ontmaskerd en kan hij zijn normale leven niet langer gescheiden houden van zijn gevaarlijke leven als superheld.",
-    'jaarvanuitgave' => 2021,
-    'regisseur' => "Jon Watts",
-    'hoofdrolspelers' => ["Tom Holland", "Benedict Cumberbatch", "Alfred Molina", "Willem Dafoe", "Jamie Foxx", "J.K. Simmons"],
-    'cover' => "images/poster-spiderman.jpg"
-  ];
+
+declare(strict_types=1);
+
+?>
+<?php
+  $titel = "Home - Fletnix";
   require_once 'components/head.php';
   require_once 'components/header.php';
-  require_once 'components/cast.php';
-  genereerHead($film['titel']);
+  genereerHead($titel);
 ?>
   <body>
     <div class="grid">
@@ -21,20 +17,38 @@
         ?>
       </header>
       <main>
-        <h1>
-          <?=$film['titel']?>
-        </h1>
-        <img src="<?=$film['cover']?>" alt="Poster van Spider-Man: No Way Home">
-        <p>
-          <?=$film['jaarvanuitgave'].' - '.$film['speelduur'].' minuten'?><br><br>
-          <?=$film['omschrijving']?><br>
-          <video controls width="750">
-            <source src="media/trailer-spiderman.mp4" type="video/mp4">
-          </video>
-          <?=
-            printCast($film['regisseur'], $film['hoofdrolspelers']);
-          ?>
-        </p>
+        <div class="preview-grid">
+          <spiderman>
+            <a href="mediaproduct.php">
+              <img src="images/thumbnail-spiderman.jpg" alt="Preview van Spider-Man: No Way Home"/>
+            </a>
+            <p>Spiderman: No Way Home</p>
+          </spiderman>
+          <bond>
+            <a href="mediaproduct.php">
+              <img src="images/thumbnail-jamesbond.jpg" alt="Preview van No Time To Die"/>
+            </a>
+            <p>No Time To Die</p>
+          </bond>
+          <venom>
+            <a href="mediaproduct.php">
+              <img src="images/thumbnail-venom.jpg" alt="Preview van Venom: Let There Be Carnage"/>
+            </a>
+            <p>Venom: Let There Be Carnage</p>
+          </venom>
+          <notice>
+            <a href="mediaproduct.php">
+              <img src="images/thumbnail-rednotice.jpg" alt="Preview van Red Notice"/>
+            </a>
+            <p>Red Notice</p>
+          </notice>
+          <grand>
+            <a href="mediaproduct.php">
+              <img src="images/thumbnail-grandtour.jpg" alt="Preview van The Grand Tour"/>
+            </a>
+            <p>The Grand Tour</p>
+          </grand>
+        </div>
       </main>
     </div>
   </body>
