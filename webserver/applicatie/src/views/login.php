@@ -8,9 +8,6 @@ declare(strict_types=1);
   require_once 'components/formLogin.php';
   echo genereerHead($titel);
 ?>
-  <style>
-    <?=include 'css/style.css';?>
-  </style>
   <body>
     <div class="grid">
       <header>
