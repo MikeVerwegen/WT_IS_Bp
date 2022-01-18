@@ -24,20 +24,24 @@ declare(strict_types=1);
         ?>
       </header>
       <main>
-        <h1>
-          <?=$film['titel']?>
-        </h1>
-        <img src="<?=$film['cover']?>" alt="Poster van Spider-Man: No Way Home">
-        <p>
-          <?=$film['jaarvanuitgave'].' - '.$film['speelduur'].' minuten'?><br><br>
-          <?=$film['omschrijving']?><br>
-          <video controls width="750">
-            <source src="media/trailer-spiderman.mp4" type="video/mp4">
-          </video>
-          <?=
-            printCast($film['regisseur'], $film['hoofdrolspelers']);
-          ?>
-        </p>
+        <div id='mediaproduct'>
+          <h1>
+            <?=$film['titel']?>
+          </h1>
+          <div id="poster">
+            <img src="<?=$film['cover']?>" alt="Poster van <?=$titel?>" width="100">
+          </div>
+          <p>
+            <?=$film['jaarvanuitgave'].' - '.$film['speelduur'].' minuten'?><br><br>
+            <?=$film['omschrijving']?><br>
+            <video controls width="750">
+              <source src="media/trailer-spiderman.mp4" type="video/mp4">
+            </video><br>
+            <?=
+              printCast($film['regisseur'], $film['hoofdrolspelers']);
+            ?>
+          </p>
+        </div>
       </main>
     </div>
   </body>

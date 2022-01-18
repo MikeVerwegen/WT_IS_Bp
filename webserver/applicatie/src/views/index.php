@@ -7,6 +7,7 @@ declare(strict_types=1);
   require_once 'components/header.php';
   echo genereerHead($titel);
 ?>
+  <link rel="stylesheet" href="css/preview.css">
   <body>
     <div class="grid">
       <header>
@@ -15,7 +16,7 @@ declare(strict_types=1);
         ?>
       </header>
       <main>
-        <div class="preview-grid">
+        <div class="preview-grid" id="preview">
           <spiderman>
             <a href="mediaproduct.php">
               <img src="images/thumbnail-spiderman.jpg" alt="Preview van Spider-Man: No Way Home"/>

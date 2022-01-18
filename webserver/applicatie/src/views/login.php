@@ -16,9 +16,11 @@ declare(strict_types=1);
         ?>
       </header>
       <main>
-        <figure>
-          <img src="images/logo.png" alt=""/>
-        </figure>
+        <div id="logo">
+          <figure>
+            <img src="images/logo.png" alt=""/>
+          </figure>
+        </div>
         <?=
         genereerInlogFormulier();
         ?>
