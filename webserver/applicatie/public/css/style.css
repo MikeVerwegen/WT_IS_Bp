@@ -2,9 +2,18 @@ header {
   grid-area: hd;
 }
 
-#headerLogo img {
+#header img {
+  max-height: 100px;
   height: 20px;
   width: auto;
+}
+
+#header a {
+  color: white;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
 }
 
 main {
