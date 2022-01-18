@@ -2,6 +2,11 @@ header {
   grid-area: hd;
 }
 
+#headerLogo img {
+  height: 20px;
+  width: auto;
+}
+
 main {
   grid-area: main;
 }
@@ -9,7 +14,7 @@ main {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50px 1fr;
+  grid-template-rows: 100px 1fr;
   grid-template-areas:
     'hd'
     'main';
