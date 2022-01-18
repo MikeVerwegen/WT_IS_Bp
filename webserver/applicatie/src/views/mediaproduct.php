@@ -1,4 +1,7 @@
 <?php
+declare(strict_types=1);
+?>
+<?php
   $film = [
     'titel' => "Spider-Man: No Way Home",
     'speelduur' => 150,
@@ -11,7 +14,7 @@
   require_once 'components/head.php';
   require_once 'components/header.php';
   require_once 'components/cast.php';
-  genereerHead($film['titel']);
+  echo genereerHead($film['titel']);
 ?>
   <body>
     <div class="grid">

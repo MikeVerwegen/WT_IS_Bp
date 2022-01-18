@@ -1,13 +1,11 @@
 <?php
-
 declare(strict_types=1);
-
 ?>
 <?php
   $titel = "Home - Fletnix";
   require_once 'components/head.php';
   require_once 'components/header.php';
-  genereerHead($titel);
+  echo genereerHead($titel);
 ?>
   <body>
     <div class="grid">
