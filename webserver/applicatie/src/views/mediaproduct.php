@@ -16,6 +16,9 @@ declare(strict_types=1);
   require_once 'components/cast.php';
   echo genereerHead($film['titel']);
 ?>
+  <style>
+    <?=include 'css/style.css';?>
+  </style>
   <body>
     <div class="grid">
       <header>
