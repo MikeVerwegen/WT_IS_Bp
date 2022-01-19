@@ -8,7 +8,9 @@ function maakHeader() {
       </a>
     </figure>
     <a href="login">Inloggen</a>
-    <input type="text" placeholder="Zoeken">
+    <form action="" method="post">
+      <input type="text" placeholder="Zoeken">
+    </form>
     <a href="privacy">Privacyverklaring</a>
     <a href="bedrijf">Over ons</a>
   </div>
