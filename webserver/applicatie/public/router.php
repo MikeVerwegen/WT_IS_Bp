@@ -35,17 +35,17 @@ if ($urlPad === '' || $urlPad === '/') {
     */
     return false;
   } else if ($urlPad === '/index') {
-    require_once '../src/views/index.php';
+    require_once 'src/views/index.php';
   } else if ($urlPad === '/mediaproduct') {
-    require_once '../src/views/mediaproduct.php';
+    require_once 'src/views/mediaproduct.php';
   } else if ($urlPad === '/login') {
-    require_once '../src/views/login.php';
+    require_once 'src/views/login.php';
   } else if ($urlPad === '/registratie') {
-    require_once '../src/views/registratie.php';
+    require_once 'src/views/registratie.php';
   } else if ($urlPad === '/bedrijf') {
-    require_once '../src/views/bedrijf.php';
+    require_once 'src/views/bedrijf.php';
   } else if ($urlPad === '/privacy') {
-    require_once '../src/views/privacy.php';
+    require_once 'src/views/privacy.php';
   } else {
     // Het is een bekende pagina noch een geldig bestandstype.
     http_response_code(404);

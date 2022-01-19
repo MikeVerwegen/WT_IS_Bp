@@ -1,7 +1,7 @@
 <?php
 function genereerInlogFormulier() {
   $html = <<<HEAD
-  <form action="router.php" method="post">
+  <form action="index" method="post">
     <fieldset>
       <label for="mail">E-mailadres:</label>
       <input id="mail" type="email" name="mail" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9._%+-]+\.[a-zA-Z]{2,4}$" required/><br/>
@@ -10,7 +10,7 @@ function genereerInlogFormulier() {
     </fieldset>
     <input type="submit" value="Inloggen"/>
   </form>
-  <form action="registratie.php" method="post">
+  <form action="registratie" method="post">
     <input type="submit" value="Registreren"/>
   </form>
 HEAD;

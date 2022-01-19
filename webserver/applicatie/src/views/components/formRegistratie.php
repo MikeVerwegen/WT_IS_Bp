@@ -1,7 +1,7 @@
 <?php
 function genereerRegistratieFormulier() {
   $html = <<<HEAD
-  <form action="login.php" method="post">
+  <form action="login" method="post">
     <fieldset>
       <label for="vnaam">Voornaam: *</label>
       <input id="vnaam" type="text" name="vnaam" required autofocus/><br/>
