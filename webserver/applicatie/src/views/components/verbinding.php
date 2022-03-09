@@ -1,7 +1,4 @@
 <?=
-$hostname = 'host.docker.internal';
-$dbname = 'fletnix';
-$username = 'sa';
 $wachtwoord = rtrim(file_get_contents('/run/secrets/password_rdbms_app', true));
 
 if (!$wachtwoord) {
@@ -9,7 +6,7 @@ if (!$wachtwoord) {
 }
 
 // Connectie met de database.
-$verbinding = new PDO('sqlsrv:Server=$hostname;Database=$fletnix;ConnectionPooling=0;',$username,$wachtwoord);
+$verbinding = new PDO('sqlsrv:Server=' . DB_HOST . ';Database=' . DB_DATABASE . ';ConnectionPooling=0;', DB_LOGIN, $wachtwoord);
 // Bewaar het wachtwoord niet langer onnodig in het geheugen van PHP.
 unset($wachtwoord);
 // Zorg ervoor dat eventuele fouttoestanden ook echt als fouten (exceptions) gesignaleerd worden door PHP.
