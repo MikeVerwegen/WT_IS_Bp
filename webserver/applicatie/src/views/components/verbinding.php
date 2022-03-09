@@ -1,5 +1,5 @@
 <?=
-$wachtwoord = rtrim(file_get_contents('/run/secrets/password_rdbms_app', true));
+$wachtwoord = 'password-142!cba!';
 
 if (!$wachtwoord) {
   throw new RuntimeException('Kon een wachtwoordbestand voor SQL Server niet uitlezen. ');
