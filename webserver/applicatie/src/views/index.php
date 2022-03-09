@@ -3,7 +3,6 @@ declare(strict_types=1);
 ?>
 <?php
   $titel = "Home - Fletnix";
-  require_once 'components/verbinding.php';
   require_once 'components/head.php';
   require_once 'components/header.php';
   echo genereerHead($titel);
